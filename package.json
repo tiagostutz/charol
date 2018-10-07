@@ -1,6 +1,6 @@
 {
   "name": "charol",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Lightweight JSON object to topic String representation",
   "main": "index.js",
   "scripts": {
