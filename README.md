@@ -63,3 +63,5 @@ topics = charol(topics)
 export default topics
 
 ```
+
+![](https://res.cloudinary.com/stutzsolucoes/image/upload/v1538952292/demo_xkzg73.gif)
