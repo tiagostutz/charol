@@ -10,7 +10,7 @@ It simply adds a `_path` property to your object containing the `String` represe
 
 Define your topic structure as a JSON object and then call the `charol` function passing the object as parameter. For example:
 
-```JSON
+```JS
 let topicScheme = {
     "home": {
         "kitchen": {
@@ -44,3 +44,22 @@ _> outputs "home/kitchen/light/power"_
 `console.log(topicPaths.home.kitchen.oven.fire.set._path)`
 
 _> outputs "home/kitchen/oven/fire/set"_
+
+### Example that works fine with VSCode and ReactJS
+
+topics.js:
+```JS
+let topics = {
+    chatList: {
+        select: null,
+        message: {
+            new: null
+        }
+    }
+}
+
+topics = charol(topics)
+
+export default topics
+
+```
