@@ -1,32 +1,20 @@
-const charolFn = (jsonObject) => {
+const objWalk = (topics, key) => {
 
-  var jsonObjectMixed = {}
-  for (var variable in jsonObject) {
-    jsonObjectMixed[`_${variable}`] = variable
-    Object.defineProperty(jsonObjectMixed, variable, {
-      get: () => { return search('', jsonObjectMixed, jsonObjectMixed[`_${variable}`]) },
-      set: (value) => { jsonObjectMixed[`_${variable}`] = value }
-    })
-  }
-
-  search(path, obj, target) => {
-    for (var k in obj) {
-        // if (k.indexOf('_') === 0) {
-        //   throw "Be careful with the `_` character as it is a `key` at the sistem. Prefer something like `-` to avoid problems`"
-        // }
-        if (obj.hasOwnProperty(k))
-            if (obj[k] === target)
-                return path + "." + k
-            else if (typeof obj[k] === "object") {
-                var result = search(path + "." + k, obj[k], target);
-                if (result)
-                    return result;
-            }
+  Object.keys(topics).forEach(k => {
+    const accKey = key != "" ? `${key}/${k}` : k
+    
+    if (topics[k] == null) {
+      topics[k] = { _path: accKey }
+    }else{
+      objWalk(topics[k], accKey)
+      topics[k]._path = accKey
     }
-    return false;
-  }
-
-
+  })
 }
 
-module.exports = charolFn
+const charol = (topicObj) => {
+  objWalk(topicObj, "")
+  return topicObj
+}
+
+module.exports = charol
