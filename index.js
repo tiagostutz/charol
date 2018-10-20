@@ -4,7 +4,7 @@ const objWalk = (topics, key) => {
     const accKey = key != "" ? `${key}/${k}` : k
     
     if (topics[k] == null) {
-      topics[k] = { _path: accKey }
+      topics[k] = accKey
     }else{
       objWalk(topics[k], accKey)
       topics[k]._path = accKey

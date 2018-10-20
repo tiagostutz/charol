@@ -16,8 +16,8 @@ topicTree = charol(topicTree)
 
 console.log(topicTree.car._path)
 console.log(topicTree.car.engine._path)
-console.log(topicTree.car.engine.temperature._path)
-console.log(topicTree.car.status._path);
+console.log(topicTree.car.engine.temperature)
+console.log(topicTree.car.status);
 
 
 

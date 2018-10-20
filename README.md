@@ -2,7 +2,8 @@
 
 JSON topic object to String representation. Useful for "autocompletion" of the topic paths.
 
-It simply adds a `_path` property to your object containing the `String` representation of the topic path
+It assigns to the last object level (leaf) the `String` representation of the topic path from root to this attribute.
+Also it adds a `_path` property to the intermediate object levels of the your object "tree"
 
 ## How to use
 
@@ -31,7 +32,15 @@ let topicScheme = {
 }
 
 const topicPaths = charol(topicScheme)
-```
+```Javascript
+
+`console.log(topicPaths.home.kitchen.light.temperature)`
+
+_> outputs "home/kitchen/light/temperature"_
+
+`console.log(topicPaths.home.kitchen.oven.fire.set)`
+
+_> outputs "home/kitchen/oven/fire/set"_
 
 `console.log(topicPaths.home.kitchen._path)`
 
@@ -41,14 +50,13 @@ _> outputs "home/kitchen"_
 
 _> outputs "home/kitchen/light/power"_
 
-`console.log(topicPaths.home.kitchen.oven.fire.set._path)`
-
-_> outputs "home/kitchen/oven/fire/set"_
+```
 
 ### Example that works fine with VSCode and ReactJS
 
 topics.js:
-```JS
+```Javascript
+
 let topics = {
     chatList: {
         select: null,

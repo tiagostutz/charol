@@ -1,0 +1,160 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/tiagostutz/.nvm/versions/v7.10.0/bin/node',
+1 verbose cli   '/Users/tiagostutz/.nvm/versions/v7.10.0/bin/npm',
+1 verbose cli   'i' ]
+2 info using npm@4.0.0
+3 info using node@v7.10.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly install normalizeTree
+8 silly loadCurrentTree Finishing
+9 silly loadIdealTree Starting
+10 silly install loadIdealTree
+11 silly cloneCurrentTree Starting
+12 silly install cloneCurrentTreeToIdealTree
+13 silly cloneCurrentTree Finishing
+14 silly loadShrinkwrap Starting
+15 silly install loadShrinkwrap
+16 silly loadShrinkwrap Finishing
+17 silly loadAllDepsIntoIdealTree Starting
+18 silly install loadAllDepsIntoIdealTree
+19 silly fetchNamedPackageData charol
+20 silly mapToRegistry name charol
+21 silly mapToRegistry using default registry
+22 silly mapToRegistry registry https://registry.npmjs.org/
+23 silly mapToRegistry data Result {
+23 silly mapToRegistry   raw: 'charol',
+23 silly mapToRegistry   scope: null,
+23 silly mapToRegistry   escapedName: 'charol',
+23 silly mapToRegistry   name: 'charol',
+23 silly mapToRegistry   rawSpec: '',
+23 silly mapToRegistry   spec: 'latest',
+23 silly mapToRegistry   type: 'tag' }
+24 silly mapToRegistry uri https://registry.npmjs.org/charol
+25 verbose request uri https://registry.npmjs.org/charol
+26 verbose request always-auth set; sending authorization
+27 info attempt registry request try #1 at 21:30:50
+28 verbose request using bearer token for auth
+29 verbose request id 7269fedcab18bf3d
+30 verbose etag W/"e81b7024e065af772e1c9f4c337c52e7"
+31 verbose lastModified Sun, 07 Oct 2018 22:16:01 GMT
+32 http request GET https://registry.npmjs.org/charol
+33 http 304 https://registry.npmjs.org/charol
+34 verbose headers { date: 'Sat, 20 Oct 2018 00:30:50 GMT',
+34 verbose headers   connection: 'keep-alive',
+34 verbose headers   'set-cookie': [ '__cfduid=d49950ddd17cac09ea220a4598f58d39a1539995450; expires=Sun, 20-Oct-19 00:30:50 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+34 verbose headers   'cf-cache-status': 'HIT',
+34 verbose headers   'cache-control': 'max-age=300',
+34 verbose headers   'cf-ray': '46c760cc2a3887ca-GIG',
+34 verbose headers   etag: '"e81b7024e065af772e1c9f4c337c52e7"',
+34 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+34 verbose headers   'last-modified': 'Sun, 07 Oct 2018 22:16:01 GMT',
+34 verbose headers   vary: 'accept-encoding, accept',
+34 verbose headers   'x-amz-meta-rev': '1-b42b36b5b376045df2e6e1058ef1a150',
+34 verbose headers   server: 'cloudflare' }
+35 silly get cb [ 304,
+35 silly get   { date: 'Sat, 20 Oct 2018 00:30:50 GMT',
+35 silly get     connection: 'keep-alive',
+35 silly get     'set-cookie': [ '__cfduid=d49950ddd17cac09ea220a4598f58d39a1539995450; expires=Sun, 20-Oct-19 00:30:50 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+35 silly get     'cf-cache-status': 'HIT',
+35 silly get     'cache-control': 'max-age=300',
+35 silly get     'cf-ray': '46c760cc2a3887ca-GIG',
+35 silly get     etag: '"e81b7024e065af772e1c9f4c337c52e7"',
+35 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+35 silly get     'last-modified': 'Sun, 07 Oct 2018 22:16:01 GMT',
+35 silly get     vary: 'accept-encoding, accept',
+35 silly get     'x-amz-meta-rev': '1-b42b36b5b376045df2e6e1058ef1a150',
+35 silly get     server: 'cloudflare' } ]
+36 verbose etag https://registry.npmjs.org/charol from cache
+37 verbose get saving charol to /Users/tiagostutz/.npm/registry.npmjs.org/charol/.cache.json
+38 verbose correctMkdir /Users/tiagostutz/.npm correctMkdir not in flight; initializing
+39 silly fetchNamedPackageData No valid target from cache, forcing network
+40 verbose request uri https://registry.npmjs.org/charol
+41 verbose request always-auth set; sending authorization
+42 info attempt registry request try #1 at 21:30:50
+43 verbose request using bearer token for auth
+44 http request GET https://registry.npmjs.org/charol
+45 http 200 https://registry.npmjs.org/charol
+46 verbose headers { date: 'Sat, 20 Oct 2018 00:30:50 GMT',
+46 verbose headers   'content-type': 'application/json',
+46 verbose headers   'transfer-encoding': 'chunked',
+46 verbose headers   connection: 'keep-alive',
+46 verbose headers   'set-cookie': [ '__cfduid=d49950ddd17cac09ea220a4598f58d39a1539995450; expires=Sun, 20-Oct-19 00:30:50 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+46 verbose headers   'cf-cache-status': 'HIT',
+46 verbose headers   'cache-control': 'max-age=300',
+46 verbose headers   'cf-ray': '46c760ccaaca87ca-GIG',
+46 verbose headers   etag: 'W/"e81b7024e065af772e1c9f4c337c52e7"',
+46 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+46 verbose headers   'last-modified': 'Sun, 07 Oct 2018 22:16:01 GMT',
+46 verbose headers   vary: 'accept-encoding, accept',
+46 verbose headers   'x-amz-meta-rev': '1-b42b36b5b376045df2e6e1058ef1a150',
+46 verbose headers   server: 'cloudflare',
+46 verbose headers   'content-encoding': 'gzip' }
+47 silly get cb [ 200,
+47 silly get   { date: 'Sat, 20 Oct 2018 00:30:50 GMT',
+47 silly get     'content-type': 'application/json',
+47 silly get     'transfer-encoding': 'chunked',
+47 silly get     connection: 'keep-alive',
+47 silly get     'set-cookie': [ '__cfduid=d49950ddd17cac09ea220a4598f58d39a1539995450; expires=Sun, 20-Oct-19 00:30:50 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+47 silly get     'cf-cache-status': 'HIT',
+47 silly get     'cache-control': 'max-age=300',
+47 silly get     'cf-ray': '46c760ccaaca87ca-GIG',
+47 silly get     etag: 'W/"e81b7024e065af772e1c9f4c337c52e7"',
+47 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+47 silly get     'last-modified': 'Sun, 07 Oct 2018 22:16:01 GMT',
+47 silly get     vary: 'accept-encoding, accept',
+47 silly get     'x-amz-meta-rev': '1-b42b36b5b376045df2e6e1058ef1a150',
+47 silly get     server: 'cloudflare',
+47 silly get     'content-encoding': 'gzip' } ]
+48 verbose get saving charol to /Users/tiagostutz/.npm/registry.npmjs.org/charol/.cache.json
+49 verbose correctMkdir /Users/tiagostutz/.npm correctMkdir not in flight; initializing
+50 silly fetchPackageMetaData Error: No compatible version found: charol@^0.2.0
+50 silly fetchPackageMetaData Valid install targets:
+50 silly fetchPackageMetaData 0.1.0
+50 silly fetchPackageMetaData
+50 silly fetchPackageMetaData     at pickVersionFromRegistryDocument (/Users/tiagostutz/.nvm/versions/v7.10.0/lib/node_modules/npm/lib/fetch-package-metadata.js:178:16)
+50 silly fetchPackageMetaData     at /Users/tiagostutz/.nvm/versions/v7.10.0/lib/node_modules/npm/node_modules/iferr/index.js:13:50
+50 silly fetchPackageMetaData     at /Users/tiagostutz/.nvm/versions/v7.10.0/lib/node_modules/npm/lib/utils/pulse-till-done.js:20:8
+50 silly fetchPackageMetaData     at saved (/Users/tiagostutz/.nvm/versions/v7.10.0/lib/node_modules/npm/lib/cache/caching-client.js:174:7)
+50 silly fetchPackageMetaData     at /Users/tiagostutz/.nvm/versions/v7.10.0/lib/node_modules/npm/node_modules/graceful-fs/polyfills.js:261:18
+50 silly fetchPackageMetaData     at FSReqWrap.oncomplete (fs.js:114:15)
+50 silly fetchPackageMetaData  error for charol@^0.2.0 { Error: No compatible version found: charol@^0.2.0
+50 silly fetchPackageMetaData Valid install targets:
+50 silly fetchPackageMetaData 0.1.0
+50 silly fetchPackageMetaData
+50 silly fetchPackageMetaData     at pickVersionFromRegistryDocument (/Users/tiagostutz/.nvm/versions/v7.10.0/lib/node_modules/npm/lib/fetch-package-metadata.js:178:16)
+50 silly fetchPackageMetaData     at /Users/tiagostutz/.nvm/versions/v7.10.0/lib/node_modules/npm/node_modules/iferr/index.js:13:50
+50 silly fetchPackageMetaData     at /Users/tiagostutz/.nvm/versions/v7.10.0/lib/node_modules/npm/lib/utils/pulse-till-done.js:20:8
+50 silly fetchPackageMetaData     at saved (/Users/tiagostutz/.nvm/versions/v7.10.0/lib/node_modules/npm/lib/cache/caching-client.js:174:7)
+50 silly fetchPackageMetaData     at /Users/tiagostutz/.nvm/versions/v7.10.0/lib/node_modules/npm/node_modules/graceful-fs/polyfills.js:261:18
+50 silly fetchPackageMetaData     at FSReqWrap.oncomplete (fs.js:114:15) code: 'ETARGET' }
+51 silly rollbackFailedOptional Starting
+52 silly rollbackFailedOptional Finishing
+53 silly runTopLevelLifecycles Finishing
+54 silly install printInstalled
+55 verbose stack Error: No compatible version found: charol@^0.2.0
+55 verbose stack Valid install targets:
+55 verbose stack 0.1.0
+55 verbose stack
+55 verbose stack     at pickVersionFromRegistryDocument (/Users/tiagostutz/.nvm/versions/v7.10.0/lib/node_modules/npm/lib/fetch-package-metadata.js:178:16)
+55 verbose stack     at /Users/tiagostutz/.nvm/versions/v7.10.0/lib/node_modules/npm/node_modules/iferr/index.js:13:50
+55 verbose stack     at /Users/tiagostutz/.nvm/versions/v7.10.0/lib/node_modules/npm/lib/utils/pulse-till-done.js:20:8
+55 verbose stack     at saved (/Users/tiagostutz/.nvm/versions/v7.10.0/lib/node_modules/npm/lib/cache/caching-client.js:174:7)
+55 verbose stack     at /Users/tiagostutz/.nvm/versions/v7.10.0/lib/node_modules/npm/node_modules/graceful-fs/polyfills.js:261:18
+55 verbose stack     at FSReqWrap.oncomplete (fs.js:114:15)
+56 verbose cwd /Users/tiagostutz/workspace/tiagostutz/charol/demo
+57 error Darwin 16.7.0
+58 error argv "/Users/tiagostutz/.nvm/versions/v7.10.0/bin/node" "/Users/tiagostutz/.nvm/versions/v7.10.0/bin/npm" "i"
+59 error node v7.10.0
+60 error npm  v4.0.0
+61 error code ETARGET
+62 error notarget No compatible version found: charol@^0.2.0
+62 error notarget Valid install targets:
+62 error notarget 0.1.0
+63 error notarget This is most likely not a problem with npm itself.
+63 error notarget In most cases you or one of your dependencies are requesting
+63 error notarget a package version that doesn't exist.
+63 error notarget
+63 error notarget It was specified as a dependency of 'demo'
+64 verbose exit [ 1, true ]
