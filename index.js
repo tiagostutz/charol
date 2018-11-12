@@ -1,7 +1,9 @@
-const objWalk = (topics, key) => {
+'use strinct'
 
-  Object.keys(topics).forEach(k => {
-    const accKey = key != "" ? `${key}/${k}` : k
+const objWalk = function(topics, key) {
+
+  Object.keys(topics).forEach( function(k) {
+    const accKey = key != "" ? key+"/"+k : k
     
     if (topics[k] == null) {
       topics[k] = accKey
@@ -12,7 +14,7 @@ const objWalk = (topics, key) => {
   })
 }
 
-const charol = (topicObj) => {
+const charol = function(topicObj) {
   objWalk(topicObj, "")
   return topicObj
 }

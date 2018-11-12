@@ -1,14 +1,14 @@
 const charol = require('./index.js')
 
 const assert = require('assert');
-describe('One level topic', () => {
+describe('One level topic', function() {
   it('should return only the string of the attributes name', function() {
     eventoTopic = charol( { evento1: null } )
     assert.equal("evento1", eventoTopic.evento1);
   });
 });
 
-describe('Two level topic', () => {
+describe('Two level topic', function() {
   it('should return the string of the top level and the first child attribute name separated by dot', function() {
     eventoTopic = charol( { evento1: { evento11: null } } )
     assert.equal("evento1", eventoTopic.evento1._path);
@@ -17,7 +17,7 @@ describe('Two level topic', () => {
 });
 
 
-describe('One and Two level topic', () => {
+describe('One and Two level topic', function() {
   it('should return the string of the top level and the first child attribute name separated by dot', function() {
     eventoTopic = charol( { 
       evento1: { 
@@ -43,7 +43,7 @@ describe('One and Two level topic', () => {
 
 
 
-describe('One, Two and Three level topic', () => {
+describe('One, Two and Three level topic', function() {
   it('should return the string of the top level and the first child attribute name separated by dot', function() {
     eventoTopic = charol( { 
       evento1: { 
