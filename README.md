@@ -32,7 +32,8 @@ let topicScheme = {
 }
 
 const topicPaths = charol(topicScheme)
-```Javascript
+```
+
 
 `console.log(topicPaths.home.kitchen.light.temperature)`
 
