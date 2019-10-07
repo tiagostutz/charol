@@ -56,7 +56,6 @@ _> outputs "home/kitchen/light/power"_
 ### Example that works fine with VSCode and ReactJS
 
 topics.js:
-```Javascript
 
 let topics = {
     chatList: {
